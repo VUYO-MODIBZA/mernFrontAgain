@@ -9,7 +9,7 @@ const GreatGrandChildrenList = () => {
     useEffect(() => {
         const fetchMyChildrenData = async () => {
             try {
-                const response = await fetch('http://mernbackagain.onrender.com/api/family/great_grandchildren', {
+                const response = await fetch('https://mernbackagain.onrender.com/api/family/great_grandchildren', {
                   method: "GET",
                   headers: {
                     "Content-Type": "application/json"
