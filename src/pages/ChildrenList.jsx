@@ -41,31 +41,6 @@ const ChildrenList = () => {
               <h2 className="card-title">{child.name}</h2>
               <p className="card-text">Gender: {child.gender}</p>
               <p className="card-text">Deceased: {child.deceased ? 'Yes' : 'No'}</p>  
-              
-              {/* Add dynamic links to navigate to their children */}
-              {child.name === 'Tozi' && (
-                <Link to={`/children/tozi_children`} className="card-link">
-                  View Tozi's Children
-                </Link>
-              )}
-              {child.name === 'Stefano' && (
-                <Link to={`/children/stefano_children`} className="card-link">
-                  View Stefano's Children
-                </Link>
-              )}
-                {child.name === 'Silas' && (
-                <Link to={`/children/silas_children`} className="card-link">
-                  View Silas's Children
-                </Link>
-              )}
-              {child.name === 'Nikiwe' && (
-                <Link to={`/children/nikiwe_children`} className="card-link">
-                  View Nikiwe's Children
-                </Link>
-              )}
-              <Link to="/children">Back to children</Link>
-            </div>
-          ))
         ) : (
           <p>No children found.</p>
         )}
