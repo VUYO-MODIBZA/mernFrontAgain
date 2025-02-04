@@ -30,24 +30,25 @@ const ChildrenList = () => {
     fetchMyChildrenData();
   }, []);
   
-  return (
-    <div>
-      <h2 style={{ textAlign: 'center' }}>My Children</h2>
-      <div className="cards-container">
-        {children.length > 0 ? (
-          children.map((child) => (
-            <div className="card" key={child._id}>
-              <img className="card-image" src={child.image} alt={child.name} />
-              <h2 className="card-title">{child.name}</h2>
-              <p className="card-text">Gender: {child.gender}</p>
-              <p className="card-text">Deceased: {child.deceased ? 'Yes' : 'No'}</p>  
-        ) : (
-          <p>No children found.</p>
-        )}
-      </div>
+return (
+  <div>
+    <h2 style={{ textAlign: 'center' }}>My Children</h2>
+    <div className="cards-container">
+      {children.length > 0 ? (
+        children.map((child) => (
+          <div className="card" key={child._id}>
+            <img className="card-image" src={child.image} alt={child.name} />
+            <h2 className="card-title">{child.name}</h2>
+            <p className="card-text">Gender: {child.gender}</p>
+            <p className="card-text">Deceased: {child.deceased ? 'Yes' : 'No'}</p>  
+          </div> // ✅ This <div> was not closed properly in your code
+        ))
+      ) : ( // ✅ The else condition is now correctly structured
+        <p>No children found.</p>
+      )}
     </div>
-  );
-};
+  </div>
+);
 
 export default ChildrenList;
 
