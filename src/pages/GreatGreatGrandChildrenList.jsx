@@ -40,17 +40,6 @@ const GreatGreatGrandChildrenList = () => {
               <h2 className="card-title">{child.name}</h2>
               <p className="card-text">Gender: {child.gender}</p>
               <p className="card-text">Deceased: {child.deceased ? 'Yes' : 'No'}</p>
-  
-              {child.name === 'Vuyiseka' && (
-                <Link to={`/children/vuyiseka_children`} className="card-link">
-                  View Vuyiseka's Children
-                </Link>
-              )}
-              {child.name === 'Snethemba' && (
-                <Link to={`/children/snethemba_children`} className="card-link">
-                  View Snethemba's Children
-                </Link>
-              )}  
             </div>
           ))
         ) : (
