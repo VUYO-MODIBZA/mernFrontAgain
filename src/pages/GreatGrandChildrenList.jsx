@@ -38,6 +38,7 @@ const GreatGrandChildrenList = () => {
                         <div className="card" key={child._id}>
                             <img className="card-image" src={child.image} alt={child.name} />
                             <h2 className="card-title">{child.name}</h2>
+                            <p className="card-text">Parent: {child.parent}</p>
                             <p className="card-text">Gender: {child.gender}</p>
                             <p className="card-text">Deceased: {child.deceased ? "Yes" : "No"}</p>
             </div>
