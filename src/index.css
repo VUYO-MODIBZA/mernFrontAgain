@@ -146,90 +146,7 @@ header a:hover {
     border-radius: 10px;
 }
 
-
-/*** VAN PAGES ***/
-.van-list-container {
-    padding-inline: 23px
-}
-
-.van-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 34px;
-    margin-top: 57px;
-}
-
-.van-tile a {
-    color: #161616;
-    text-decoration: none;    
-}
-
-.van-tile img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.van-list-container button {
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.van-type {
-    height: 34px;
-    padding: 6px 26px;
-    font-style: normal;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFEAD0;
-    color: #4D4D4D;
-    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.van-type:hover {
-    color: #FFEAD0;
-}
-
-.van-type:focus {
-    outline: none;
-}
-
-.van-type.selected {
-    color: #FFEAD0;
-}
-
-.van-type.simple:hover, .van-type.simple.selected {
-    background-color: #E17654;
-}
-
-.van-type.rugged:hover, .van-type.rugged.selected {
-    background-color: #115E59;
-}
-
-.van-type.luxury:hover, .van-type.luxury.selected {
-    background-color: #161616;
-}
-
-.van-type.clear-filters {
-    margin-left: -20px;
-    height: 34px;
-    padding: 6px 26px;
-    font-style: normal;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    text-decoration: underline;
-    background-color: transparent;
-    color: #4D4D4D;
-}
-
-i[class*='van-type-'] {
-    padding: 7px 14px;
-}
-
-
-.card {
+/*.card {
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
@@ -238,7 +155,20 @@ i[class*='van-type-'] {
     text-align: center;
     max-width: 250px;
     display: inline-block;
-  }
+  }*/
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 15px;
+    text-align: center;
+    max-width: 100%; /* Ensure it adapts */
+    width: 200px; /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
   .card .card-image{
     width: 160px;
     height:160px;
@@ -246,23 +176,39 @@ i[class*='van-type-'] {
     object-fit: fill;
     margin-bottom: 10px;
   }
-  .card .card-title{
+  /*.card .card-title{
     font-family: Arial, sans-serif;
     margin: 0;
     color: hsl(0, 0%, 20%)
-  }
-  .card .card-text{
+  }*/
+  /*.card .card-text{
     font-family: Arial, sans-serif;
     color: hsl(0, 0%, 30%)
-  }
-  .cards-container {
+  }*/
+.card-title, .card-text {
+    font-size: 14px; /* Reduce font size on small screens */
+    word-wrap: break-word; /* Prevents text from overflowing */
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+  /*'.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centers cards horizontally */
     align-items: center; /* Centers cards vertically (if the container has a fixed height) */
     gap: 20px; /* Space between cards */
     margin-top: 20px; /* Optional: Adds space from the top */
+}*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between cards */
+    justify-content: center;
+    align-items: stretch; /* Makes sure cards expand properly */
+    padding: 10px;
 }
+
   .button{
     background-color:hsl(200, 100%, 50%);
     color: white;
@@ -318,9 +264,25 @@ header nav a {
 }
 
 /* Responsive styling for smaller screens */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     header nav {
         flex-direction: column;
         gap: 10px; /* Smaller gap between vertically stacked links */
     }
+}*/
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns */
+    }
+
+    .card {
+        width: 90%; /* Take full width on smaller screens */
+        max-width: 180px; /* Prevent too large cards */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .card-title, .card-text {
+        font-size: 12px; /* Adjust font size */
+    }
 }
+
