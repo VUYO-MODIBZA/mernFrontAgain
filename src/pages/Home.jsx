@@ -19,8 +19,8 @@ function Home() {
             </div>
             <div class="image-container">
             <p>"A family bound together across generations, sharing love and peace at each gathering, celebrating the togetherness that was instilled by those who came before and cherished by those who come after."</p>
-            <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743709161/IMG-20220319-WA0009_dwmx4y.jpg" />       
-            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1731412564/family-girls_yoztht.jpg" />
+            <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1731412564/family-girls_yoztht.jpg" />       
+            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743709775/IMG-20220319-WA0009_u4asgt.jpg" />
             </div>
             <Link to="/">Back to home</Link>
         </div>
