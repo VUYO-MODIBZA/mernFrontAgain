@@ -20,7 +20,7 @@ function Home() {
             <div class="image-container">
             <p>"A family bound together across generations, sharing love and peace at each gathering, celebrating the togetherness that was instilled by those who came before and cherished by those who come after."</p>
             <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743707573/IMG-20211231-WA0033_vcnepb.jpg" />       
-            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743702505/Umtshato_ka_Nontombi_e9tess.jpg" />
+            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743707573/IMG-20211231-WA0033_vcnepb.jpg" />
             </div>
             <Link to="/">Back to home</Link>
         </div>
