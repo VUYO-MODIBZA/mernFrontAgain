@@ -191,15 +191,6 @@ header a:hover {
     overflow-wrap: break-word;
     text-align: center;
 }
-
-  /*.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers cards horizontally */
-    align-items: center; /* Centers cards vertically (if the container has a fixed height) */
-    gap: 20px; /* Space between cards */
-    margin-top: 20px; /* Optional: Adds space from the top */
-}*/
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
