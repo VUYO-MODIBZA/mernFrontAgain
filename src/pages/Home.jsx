@@ -6,7 +6,7 @@ function Home() {
         <>
         <div>
             <h1>Welcome to the webpage of Chitha Mthimba and Selina Phetshiwe "Maxaba" Mthimba</h1>
-            <p>Discover the lineage of Selina Phetshiwe "Maxaba" Mtimba, a legacy spanning five generations.</p>
+            <p>Discover the lineage of Chitha Mthimba and Selina Phetshiwe "Maxaba" Mthimba, with a legacy spanning five generations.</p>
             <p>Explore the stories of her descendants, from her children to her great-great-great-grandchildren.</p>
             <div class="image-container">
             <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1731328613/family-pic2_xm7wlr.jpg" alt="Family-pic" />
