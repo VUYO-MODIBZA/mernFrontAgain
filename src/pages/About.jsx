@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className="about-page-container">
             <div className="about-page-content">
-                <p>Chitha Mthimba was the son of Nondlala "Xhayiya" Twalo. He was born in ..................., in the village of Upper Didimana, located in the Hewu district in the Eastern Cape Province of South Africa.</p>
+                <p>Chitha Mthimba was the son of Nondlala Xhayiya. He was born in the village of Upper Didimana, located in the Hewu district in the Eastern Cape Province of South Africa.</p>
                 <p>He married Selina Phetshiwe Twalo, and together they were blessed with four children - Tozi Lizzie Ningiza, Stephen Mthimba, Silas Mthimba and Nikiwe Ndidi</p>
                 <div className="about-page-cta">
                     <div className="image-container">
