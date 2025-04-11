@@ -31,7 +31,7 @@ const GreatGrandChildrenList = () => {
 
     return (
         <div>
-            <h2 style={{ textAlign: 'center' }}>My Great_grandchildren</h2>
+            <h2 style={{ textAlign: 'center' }}>The Great_grandchildren</h2>
             <div className="cards-container">
                 {children.length > 0 ? (
                     children.map((child) => (
