@@ -11,7 +11,7 @@ export default function About() {
                     <div className="image-container">
                         <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1743956313/Imvelaphi%20ka%20Chitha%20Mthimba.png" alt="Family-tree" />
                         <p>Discover more detailed information about Chitha Mthimba's family history.</p>
-                        <Link className="link-button" to="/Children">Explore the Lineage</Link>
+                        <Link className="link-button" to="/children">Explore the Lineage</Link>
                     </div>
                 </div>
             </div>
