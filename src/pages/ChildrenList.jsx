@@ -32,7 +32,7 @@ const ChildrenList = () => {
   
 return (
   <div>
-    <h2 style={{ textAlign: 'center' }}>My Children</h2>
+    <h2 style={{ textAlign: 'center' }}>The Children</h2>
     <div className="cards-container">
       {children.length > 0 ? (
         children.map((child) => (
