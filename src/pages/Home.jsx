@@ -20,7 +20,7 @@ function Home() {
             <div class="image-container">
             <p>"Rooted in a rich history, strengthened by tradition, and carried forward with pride, our lineage is a testament to the bonds that time cannot break. "</p>
             <img className="home-image1" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1753628214/IMG-20220319-WA0009_u4asgt_cq4lmd.jpg" />       
-            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1753628679/IMG-20211231-WA0033_b1adf1_jeo17s.jpg" />
+            <img className="home-image2" src="https://res.cloudinary.com/dhcsne1pn/image/upload/v1745419232/embroidery_pics/pillow-cases_bioidd.jpg" />
             </div>
             <p>Through stories, memories, and shared experiences, we honor our past, embrace our present, and inspire future generations to continue the legacy.</p>
             <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
